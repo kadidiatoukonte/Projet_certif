@@ -4,10 +4,10 @@ declare(strict_types = 1);
 
 class Admin
 {
-    protected   $name,
-                $id,
-                $mail,
-                $mdp;
+    protected   $nameAdmin,
+                $idAdmin,
+                $emailAdmin,
+                $passwordAdmin;
 
     public function __construct(array $array)
     {
@@ -38,10 +38,10 @@ class Admin
      * @param int $id
      * @return  self
      */ 
-    public function setId( $id)
+    public function setIdAdmin( $idAdmin)
     {
-        $id = (int) $id;
-        $this->id = $id;
+        $idAdmin = (int) $idAdmin;
+        $this->idAdmin = $idAdmin;
         return $this;
     }
     
@@ -51,9 +51,9 @@ class Admin
      * @param string $name
      * @return  self
      */ 
-    public function setName(string $name)
+    public function setNameAdmin(string $nameAdmin)
     {
-        $this->name = $name;
+        $this->nameAdmin = $nameAdmin;
         return $this;
     }
 
@@ -62,9 +62,9 @@ class Admin
      *
      * @return  self
      */ 
-    public function setMail($mail)
+    public function setEmailAdmin($emailAdmin)
     {
-        $this->mail = $mail;
+        $this->emailAdmin = $emailAdmin;
         return $this;
     }
 
@@ -73,9 +73,9 @@ class Admin
      *
      * @return  self
      */ 
-    public function setMdp($mdp)
+    public function setPasswordAdmin($passwordAdmin)
     {
-        $this->mdp = $mdp;
+        $this->passwordAdmin = $passwordAdmin;
         return $this;
     }
 
@@ -84,32 +84,32 @@ class Admin
     /**
      * Get the value of id
      */ 
-    public function getId()
+    public function getIdAdmin()
     {
-        return $this->id;
+        return $this->idAdmin;
     }
 
     /**
      * Get the value of name
      */ 
-    public function getName()
+    public function getNameAdmin()
     {
-        return $this->name;
+        return $this->nameAdmin;
     }
                           
     /**
      * Get the value of mail
      */ 
-    public function getMail()
+    public function getemailAdmin()
     {
-        return $this->mail;
+        return $this->emailAdmin;
     }
 
     /**
      * Get the value of mdp
      */ 
-    public function getMdp()
+    public function getPasswordAdmin()
     {
-        return $this->mdp;
+        return $this->passwordAdmin;
     }
 }

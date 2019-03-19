@@ -22,30 +22,27 @@ $adminManager = new AdminManager($db);
 
 
 // Si le formulaire de création de compte est soumis
-if(isset($_POST['login'])){
+if(isset($_POST['signup'])){
 
 	// Si le champ name est bien rempli, et n'est pas vide
-	if(isset($_POST['nameAdmin']) && isset($_POST['passwordAdmin']) && !empty($_POST['nameAdmin']) && !empty($_POST['passwordAdmin'])){
-
+	if(isset($_POST['nameAdmin']) && isset($_POST['emailAdmin']) && isset($_POST['passwordAdmin']) && !empty($_POST['nameAdmin']) && !empty($_POST['emailAdmin']) && !empty($_POST['passwordAdmin'])){
         $nameAdmin = htmlspecialchars($_POST['nameAdmin']);
+        $emailAdmin = htmlspecialchars($_POST['emailAdmin']);
         $passwordAdmin = htmlspecialchars($_POST['passwordAdmin']);
         $pdoAdmin = new Admin([
 			'nameAdmin' => $nameAdmin,
-			'passwordAdmin' => $passwordAdmin
-		]);
-		$getAdmin = $adminManager->verifAdminDispo($pdoAdmin);
-        if($getAdmin){
-			if ($passwordAdmin == $getAdmin->getPasswordAdmin())
-			{
-				header('location: index.php');
-			} else {
-				header('location: login.php');
-			}
-		} else {
-			header('location: login.php');
+			'passwordAdmin' => $passwordAdmin,
+			'emailAdmin' => $emailAdmin
+        ]);
+        
+        var_dump($pdoAdmin);
+		$getAdmin = $adminManager->getAdmin($nameAdmin);
+		if (!$getAdmin) {
+			$adminManager->addAdmin($pdoAdmin);
 		}
-	} 
+	}
 }
+$admins = $adminManager->getAdmins();
 
 // Enfin, on inclut la vue
-include "../views/loginView.php";
+include "../views/signupView.php";

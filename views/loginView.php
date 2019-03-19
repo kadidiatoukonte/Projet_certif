@@ -1,58 +1,36 @@
 <?php
-  include("template/header.php")
- ?>
+  include("template/header.php"); 
+  ?>
+<body>
 
-<div class="login-wrap">
-	<div class="login-html">
-		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
-		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
-		<div class="login-form">
-			<div class="sign-in-htm">
-				<div class="group">
-					<label for="name" class="label">Username</label>
-					<input id="user" type="text" name="name" class="input">
-				</div>
-				<div class="group">
-					<label for="mdp" class="label">Password</label>
-					<input id="pass" type="password" name="mdp" class="input" data-type="password">
-				</div>
-				<div class="group">
-					<input id="check" type="checkbox" class="check" checked>
-					<label for="check"><span class="icon"></span> Keep me Signed in</label>
-				</div>
-				<div class="group">
-					<input type="submit" class="button" name="login" value="Sign In">
-				</div>
-				<div class="hr"></div>
-				<div class="foot-lnk">
-					<a href="#forgot">Forgot Password?</a>
-				</div>
+	<p class="mx-auto">Welcome to my <strong> Tourism </strong> application</p>
+	<p class="mx-auto">If you do not have an account, please see <strong> <a href="signup.php"> subscribe</a></strong></p>
+
+	<div class="container text-center" style="background-color:#f1f1f1"> 
+	  <h2>Login</h2>
+		<form action="login.php" method="post">
+			<div class="imgcontainer">
+				<!-- <img src="../assets/img/backgImg.jpg" alt="Admin" class="avatar"> -->
 			</div>
-			<div class="sign-up-htm">
-				<div class="group">
-					<label for="name" class="label">Username</label>
-					<input id="user" type="text" name="name" class="input">
-				</div>
-				<div class="group">
-					<label for="mdp" class="label">Password</label>
-					<input id="pass" type="password" name="mdp" class="input" data-type="password">
-				</div>
-				<div class="group">
-					<label for="mdp" class="label">Repeat Password</label>
-					<input id="pass" type="password" name="mdp" class="input" data-type="password">
-				</div>
-				<div class="group">
-					<label for="mail" class="label">Email Address</label>
-					<input id="pass" type="text" name="mail" class="input">
-				</div>
-				<div class="group">
-					<input type="submit" class="button" name="login" value="Sign Up">
-				</div>
-				<div class="hr"></div>
-				<div class="foot-lnk">
-					<label for="tab-1">Already Member?</a>
-				</div>
+
+			<div class="container">
+				<label for="nameAdmin"><b>Name</b></label>
+				<input type="text" placeholder="Enter Name" name="nameAdmin" required><br><br>
+				<label for="passwordAdmin"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="passwordAdmin" required>
 			</div>
-		</div>
-	</div>
-</div>
+
+			
+			<div class="container" style="background-color:#f1f1f1"> 
+			  <br> 
+				<button type="submit" name="login">Login</button>
+				<button type="button" class="cancelbtn">Cancel</button>
+			</div>
+		</form>
+  </div>
+
+
+</body>
+
+<?php
+  include("template/footer.php");

@@ -7,7 +7,7 @@
 <!-- Navigation Bar -->
 <div class="w3-bar w3-white w3-border-bottom">
   <div class="fixed-top" style="background-color: white;">
-  <a href="#" class="w3-bar-item"><img src="../assets/img/logo.png" alt="logo" style="width: 60px;"></a>
+  <a href="index.php" class="w3-bar-item"><img src="../assets/img/logo.png" alt="logo" style="width: 60px;"></a>
   <nav class="navbar navbar-expand-lg">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Accueil</a>
+          <a class="nav-link" href="index.php">Accueil</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -68,21 +68,19 @@
 <header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
   <img class="w3-image" src="../assets/img/kenya2.jpeg" alt="London" width="1500" height="700"> 
   <div class="w3-display-middle" style="width:65%">
-    <div class="w3-bar w3-transparent" style="color: black;">
+    <div class="w3-bar w3-transparent" style="color: floralwhite;">
       <h3>Kenya (Afrique de l'Est)</h3>
-      <p>ACCUEIL / DESTINATIONS / KENYA (AFRIQUE DE L'EST)</p>
+      <p><a href="index.php">ACCUEIL</a> / DESTINATIONS / KENYA (AFRIQUE DE L'EST)</p>
     </div>
     <!-- Tabs -->
     <div id="Flight" class="w3-display-middle w3-container w3-white w3-padding-16 myLink" style="width:65%">
-      
-      
+       
     </div>
   </div>  
-  
 </header>
 
-<div class="row col-10 mx-auto p-0 mt-5 card-deck">
-  <div class="col mt-4">
+<div class="row col-10 mx-auto p-0 mt-4 card-deck">
+  <div class="col mt-3">
       <p class="mt-4 brown sous_titre" style="text-align: center;"><strong>Le Kenya (Afrique de l’Est) est le paradis des chasseurs d’images.</strong><br></p>
       <p class="text-center">Equipé d’un bon appareil photographique, le visiteur sera comblé par une faune abondante.</p>
   </div>
@@ -105,30 +103,51 @@
 </div>
 
 <ul id="listForKenya" class="col-12 text-center thead-light list-unstyled list-inline bg-light p-3 mb-0">
-  <li class="list-inline-item"><a id="Galerie" href="#listForKenya">Galerie</a></li>
-  <li class="list-inline-item"><a id="Lekenya" href="#listForKenya">Pays</a></li>
-  <li class="list-inline-item"><a id="Sante" href="#listForKenya">Santé</a></li>
-  <li class="list-inline-item"><a id="Formalites" href="#listForKenya">Formalités</a></li>
-  <li class="list-inline-item"><a id="Video" href="#listForKenya">Vidéo</a></li>
+  <li class="list-inline-item"><a id="GalerieList" href="#listForKenya">Galerie</a></li>
+  <li class="list-inline-item"><a id="LekenyaList" href="#listForKenya">Pays</a></li>
+  <li class="list-inline-item"><a id="SanteList" href="#listForKenya">Santé</a></li>
+  <li class="list-inline-item"><a id="FormalitesList" href="#listForKenya">Formalités</a></li>
+  <li class="list-inline-item"><a id="VideoList" href="#listForKenya">Vidéo</a></li>
 </ul>
-<table class="table">
-    <tr>
-      <td>
-            <div id="galerie">
-                <div class="mx-auto text-center">
-                  <img class="mySlides w3-image" src="../assets/img/kenya3.jpg" alt="Kenya" width="800" height="600">
-                  <img class="mySlides w3-image" src="../assets/img/kenya4.jpg" alt="Kenya" width="800" height="600">
-                  <img class="mySlides w3-image" src="../assets/img/kenya5.jpg" alt="Kenya" width="800" height="600">
-                  <img class="mySlides w3-image" src="../assets/img/kenya6.jpg" alt="Kenya" width="800" height="600">
-                  <img class="mySlides w3-image" src="../assets/img/kenya7.jpg" alt="Kenya" width="800" height="600">
-                  <img class="mySlides w3-image" src="../assets/img/kenya8.jpg" alt="Kenya" width="800" height="600">
-                  <img class="mySlides w3-image" src="../assets/img/kenya9.jpg" alt="Kenya" width="800" height="600">
-                  <img class="mySlides w3-image" src="../assets/img/kenya10.jpg" alt="Kenya" width="800" height="600">
+<table class="col-12 mt-4">
+    <tr class="col-12">
+      <td class="col-12" id="galerie">
+            <div class="col-12">
+                <div class="col-9 mx-auto" id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="../assets/img/kenya3.jpg" alt="First slide" width="800" height="400">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../assets/img/kenya4.jpg" alt="Second slide" width="800" height="400">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../assets/img/kenya5.jpg" alt="Third slide" width="800" height="400">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../assets/img/kenya5.jpg" alt="Third slide" width="800" height="400">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../assets/img/kenya6.jpg" alt="Third slide" width="800" height="400">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../assets/img/kenya7.jpg" alt="Third slide" width="800" height="400">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../assets/img/kenya8.jpg" alt="Third slide" width="800" height="400">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../assets/img/kenya9.jpg" alt="Third slide" width="800" height="400">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="../assets/img/kenya10.jpg" alt="Third slide" width="800" height="400">
+                  </div>
                 </div>
+              </div>
             </div>
       </td>
-      <td>
-            <div id="lekenya" class="col-10 mx-auto">    
+      <td class="col-12" id="lekenya">
+            <div class="col-10 mx-auto">    
                 <h3 class="brown"><strong>Carte d’identité du Kenya :</strong></h3>
                 <p style="text-align: justify">République<br>
                 <strong>Langues officielles :</strong> Anglais, Swahili.<br>
@@ -146,8 +165,8 @@
                 <strong>Electricité :</strong> Le voltage est 220V / 50 Hz. Il est préférable d’emmener son propre adaptateur car les prises sont de type anglais et certains lodges n’en fournissent pas.</p>     
             </div>
       </td>
-      <td>
-             <div id="formalites" class="col-10 mx-auto">      
+      <td class="col-12" id="formalites">
+             <div class="col-10 mx-auto">      
                 <h3 class="brown"><strong>Carte d’identité du Kenya :</strong></h3>
                 <p style="text-align: justify">République<br>
                 <strong>Langues officielles :</strong> Anglais, Swahili.<br>
@@ -165,8 +184,8 @@
                 <strong>Electricité :</strong> Le voltage est 220V / 50 Hz. Il est préférable d’emmener son propre adaptateur car les prises sont de type anglais et certains lodges n’en fournissent pas.</p>              
             </div>
       </td>
-      <td>
-             <div id="sante" class="col-10 mx-auto">      
+      <td class="col-12" id="sante">
+             <div class="col-10 mx-auto">      
                 <h3 class="brown"><strong>Conseils Santé :</strong></h3>
                 <p style="text-align: justify"> Avant votre départ, consultez votre médecin et souscrivez un contrat auprès d’une compagnie d’assistance couvrant les frais médicaux et le rapatriement sanitaire.</p>
                 <ul>
@@ -189,16 +208,17 @@
                 </ul>  
             </div>
       </td>
-      <td>
-            <div id="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gTEXJsw62iU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+      <td class="col-12" id="video">
+            <div class="col-10 text-center mx-auto">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/gTEXJsw62iU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
       </td>
     </tr>
   </tbody>
 </table>
   
 <div class="col-10 mx-auto mt-4">
-    <hr>
+  <hr>
 	<h3 class="brown"><strong>A ne pas manquer au Kenya (Afrique de l’Est) :</strong></h3>
   <ul>
     <li>Rencontrez les Masaïs.</li>

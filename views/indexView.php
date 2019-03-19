@@ -7,7 +7,7 @@
 <!-- Navigation Bar -->
 <div class="w3-bar w3-white w3-border-bottom">
   <div class="fixed-top" style="background-color: white;">
-  <a href="#" class="w3-bar-item"><img src="../assets/img/logo.png" alt="logo" style="width: 60px;"></a>
+  <a href="index.php" class="w3-bar-item"><img src="../assets/img/logo.png" alt="logo" style="width: 60px;"></a>
 <!-- </div> -->
   <nav class="navbar navbar-expand-lg">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +16,7 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Accueil</a>
+        <a class="nav-link" href="index.php">Accueil</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -132,32 +132,6 @@
     </div>
   </div>
   <hr class="mt-4">
-
-  <!-- <div class="card-deck mt-5"> 
-  <div class="-webkit-inline-box">
-    <img class="cercle" src="../assets/img/safari1.jpg" class="card-img-top" alt="Safari">
-    <div class="card-body">
-      <h5 class="card-title">Safari</h5>
-      <p class="card-text">“Safari” est un mot swahili signifiant « long voyage » qui désigne habituellement une excursion touristique à caractère sportif. Un safari en Afrique était à l'origine une 
-                            expédition d'exploration. Puis, le mot désigna les voyages de chasse au grand gibier en Afrique.</p>
-    </div>
-  </div>
-  <div class="-webkit-inline-box">
-    <img class="cercle" src="../assets/img/parc1.jpg" class="card-img-top" alt="Parc">
-    <div class="card-body">
-      <h5 class="card-title">Parc Nationaux en Afrique</h5>
-      <p class="card-text">Les parcs nationaux en Afrique ont vocation de protéger la faune, la flore et, plus généralement, le biotope des conséquences négatives des activités humaines.
-                           Les parcs nationaux ont également un rôle économique important pour les différents pays africains compte tenu de l’intérêt touristique qu’ils présentent.</p>
-    </div>
-  </div>
-  <div class="-webkit-inline-box">
-    <img class="cercle" src="../assets/img/hotel1.jpg" class="card-img-top" alt="Hôtel">
-    <div class="card-body">
-      <h5 class="card-title">Hôtels et Lodges en Afrique</h5>
-      <p class="card-text">Les plus beaux hôtels et lodges en Afrique. Ces établissements comptent parmi les plus luxueux et sophistiqués au monde et ont fait l’objet d’une sélection rigoureuse.</p>
-    </div>
-  </div>
-</div> -->
 
 <div class="row card-deck mt-5">
       <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mt-3 -webkit-inline-box">
