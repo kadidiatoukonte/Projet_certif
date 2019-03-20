@@ -16,7 +16,7 @@ $db = Database::DB();
 
 // On instancie notre manager
 $contactmanager = new ContactManager($db);
-
+$messageSend = '';
 if(isset($_POST['submit'])){
     
     // Si le champ name est bien rempli, et n'est pas vide
@@ -35,8 +35,12 @@ if(isset($_POST['submit'])){
             
             // On enregistre l'objet $account dans la base de données
             $contactmanager->createContacts($contact);
-        }       
-        var_dump($nameContact);
+            $messageSend = 'Votre message à bien été envoyé';
+            header('Refresh: 2; url=' . $_SERVER['REQUEST_URI'] . '');
+        } else {
+            $messageSend = 'Votre message n\'as pas pu être envoyé';
+            header('Refresh: 2; url=' . $_SERVER['REQUEST_URI'] . '');
+        }
 
 }
 

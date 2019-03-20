@@ -536,3 +536,7 @@ body{
 .-webkit-box{
     display: -webkit-box !important;
 } */
+
+.flex{
+    display: flex
+}

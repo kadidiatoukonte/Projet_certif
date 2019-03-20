@@ -40,7 +40,7 @@ class AdminManager
      */
     public function verifAdmin(Admin $admin)
     {
-        $query = $this->getDd()->prepare('SELECT * FROM admins WHERE nameAdmin = :nameAdmin');
+        $query = $this->getDb()->prepare('SELECT * FROM admins WHERE nameAdmin = :nameAdmin');
         $query->bindValue(':nameAdmin', $admin->getNameAdmin(), PDO::PARAM_STR);
 
         $query->execute();
@@ -51,7 +51,7 @@ class AdminManager
     }
 
     /**
-     * verif if admin as disponibility for sign up
+     * verif if admin exist
      *
      * @param Admin $admin
      * @return self
@@ -60,12 +60,15 @@ class AdminManager
     {
         $query = $this->getDb()->prepare('SELECT * FROM admins WHERE nameAdmin = :nameAdmin');
         $query->bindValue(':nameAdmin', $admin->getNameAdmin(), PDO::PARAM_STR);
+
         $query->execute();
         $admins = $query->fetchAll(PDO::FETCH_ASSOC);
         foreach ($admins as $getAdmin) {
             return new Admin($getAdmin);
         }
     }
+
+    
 
     /**
      * create admin
@@ -77,8 +80,8 @@ class AdminManager
     {
         $query = $this->getDb()->prepare('INSERT INTO admins(nameAdmin, passwordAdmin, emailAdmin) VALUES(:nameAdmin, :passwordAdmin, :emailAdmin)');
         $query->bindValue(':nameAdmin', $admin->getNameAdmin(), PDO::PARAM_STR);     
-        $query->bindValue(':emailAdmin', $admin->getEmailAdmin(), PDO::PARAM_STR);
         $query->bindValue(':passwordAdmin', $admin->getPasswordAdmin(), PDO::PARAM_STR);
+        $query->bindValue(':emailAdmin', $admin->getEmailAdmin(), PDO::PARAM_STR);
         $query->execute();
     }
     /**

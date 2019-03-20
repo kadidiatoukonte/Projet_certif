@@ -35,14 +35,13 @@ if(isset($_POST['signup'])){
 			'emailAdmin' => $emailAdmin
         ]);
         
-        var_dump($pdoAdmin);
 		$getAdmin = $adminManager->getAdmin($nameAdmin);
 		if (!$getAdmin) {
-			$adminManager->addAdmin($pdoAdmin);
+            echo 'gg';
+			$adminManager->createAdmin($pdoAdmin);
 		}
 	}
 }
 $admins = $adminManager->getAdmins();
-
 // Enfin, on inclut la vue
 include "../views/signupView.php";
