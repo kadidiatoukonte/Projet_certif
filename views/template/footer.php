@@ -36,11 +36,7 @@ function carousel() {
 </script>
 
 <script>
-document.getElementById("Galerie").addEventListener("click", myGalerie);
-document.getElementById("lekenya").addEventListener("click", myGalerie);
-document.getElementById("formalites").addEventListener("click", myGalerie);
-document.getElementById("sante").addEventListener("click", myGalerie);
-document.getElementById("video").addEventListener("click", myGalerie);
+document.getElementById("GalerieList").addEventListener("click", myGalerie);
 
 function myGalerie() {
   document.getElementById("lekenya").style.display = "none";
@@ -51,11 +47,7 @@ function myGalerie() {
 
 }
 
-document.getElementById("galerie").addEventListener("click", myKenya);
-document.getElementById("Lekenya").addEventListener("click", myKenya);
-document.getElementById("formalites").addEventListener("click", myKenya);
-document.getElementById("sante").addEventListener("click", myKenya);
-document.getElementById("video").addEventListener("click", myKenya);
+document.getElementById("LekenyaList").addEventListener("click", myKenya);
 
 function myKenya() {
   document.getElementById("galerie").style.display = "none";
@@ -65,11 +57,7 @@ function myKenya() {
   document.getElementById("formalites").style.display = "none";
 }
 
-document.getElementById("galerie").addEventListener("click", myFormalites);
-document.getElementById("lekenya").addEventListener("click", myFormalites);
-document.getElementById("Formalites").addEventListener("click", myFormalites);
-document.getElementById("sante").addEventListener("click", myFormalites);
-document.getElementById("video").addEventListener("click", myFormalites);
+document.getElementById("FormalitesList").addEventListener("click", myFormalites);
 
 function myFormalites() {
   document.getElementById("formalites").style.display = "block";
@@ -80,11 +68,7 @@ function myFormalites() {
 
 }
 
-document.getElementById("galerie").addEventListener("click", mySante);
-document.getElementById("lekenya").addEventListener("click", mySante);
-document.getElementById("formalites").addEventListener("click", mySante);
-document.getElementById("Sante").addEventListener("click", mySante);
-document.getElementById("video").addEventListener("click", mySante);
+document.getElementById("SanteList").addEventListener("click", mySante);
 
 function mySante() {
   document.getElementById("lekenya").style.display = "none";
@@ -96,10 +80,7 @@ function mySante() {
 
 }
 
-document.getElementById("galerie").addEventListener("click", myVideo);
-document.getElementById("lekenya").addEventListener("click", myVideo);
-document.getElementById("formalites").addEventListener("click", myVideo);
-document.getElementById("Video").addEventListener("click", myVideo);
+document.getElementById("VideoList").addEventListener("click", myVideo);
 
 function myVideo() {
   document.getElementById("lekenya").style.display = "none";
