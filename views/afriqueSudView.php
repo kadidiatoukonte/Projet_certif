@@ -1,10 +1,9 @@
 <?php
   include("template/header.php");
   include("template/navbar.php")
- ?>
+?>
 
 <body class="w3-light-grey">
-
 
 <header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
   <img class="w3-image" src="../assets/img/as6.jpg" alt="" width="1500" height="700"> 

@@ -1,5 +1,5 @@
 <?php
-//   include("template/header.php")
+  // include("template/header.php")
  ?>
 
 <body class="w3-light-grey">
@@ -21,11 +21,11 @@
             Pays
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Afrique du Sud</a>
-            <a class="dropdown-item" href="#">Côte d'Ivoire</a>
-            <a class="dropdown-item" href="#">Kenya</a>
-            <a class="dropdown-item" href="#">Mali</a>
-            <a class="dropdown-item" href="#">Sénégal</a>
+            <a class="dropdown-item" href="as.php">Afrique du Sud</a>
+            <a class="dropdown-item" href="ci.php">Côte d'Ivoire</a>
+            <a class="dropdown-item" href="kenya.php">Kenya</a>
+            <a class="dropdown-item" href="mali.php">Mali</a>
+            <a class="dropdown-item" href="senegal.php">Sénégal</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -33,8 +33,8 @@
             Safaris
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Afrique du Sud</a>
-            <a class="dropdown-item" href="#">Kenya</a>
+            <a class="dropdown-item" href="as.php">Afrique du Sud</a>
+            <a class="dropdown-item" href="kenya.php">Kenya</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -42,21 +42,21 @@
             Hôtels et Lodges
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Afrique du Sud</a>
-            <a class="dropdown-item" href="#">Côte d'Ivoire</a>
-            <a class="dropdown-item" href="#">Kenya</a>
-            <a class="dropdown-item" href="#">Mali</a>
-            <a class="dropdown-item" href="#">Sénégal</a>
+            <a class="dropdown-item" href="as.php">Afrique du Sud</a>
+            <a class="dropdown-item" href="ci.php">Côte d'Ivoire</a>
+            <a class="dropdown-item" href="kenya.php">Kenya</a>
+            <a class="dropdown-item" href="mali.php">Mali</a>
+            <a class="dropdown-item" href="senegal.php">Sénégal</a>
           </div>
         </li>    
         <li class="nav-item">
-          <a class="nav-link" href="#">Noces</a>
+          <a class="nav-link" href="parc.php">Parcs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Parcs</a>
+          <a class="nav-link" href="reservation.php">Réservation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="contact.php">Contact</a>
         </li>
       </ul>
     </div>
