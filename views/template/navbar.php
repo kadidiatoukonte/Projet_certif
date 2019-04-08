@@ -37,17 +37,17 @@
             <a class="dropdown-item" href="kenya.php">Kenya</a>
           </div>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Hôtels et Lodges
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="as.php">Afrique du Sud</a>
             <a class="dropdown-item" href="ci.php">Côte d'Ivoire</a>
             <a class="dropdown-item" href="kenya.php">Kenya</a>
             <a class="dropdown-item" href="mali.php">Mali</a>
             <a class="dropdown-item" href="senegal.php">Sénégal</a>
-          </div>
+          </div> -->
         </li>    
         <li class="nav-item">
           <a class="nav-link" href="parc.php">Parcs</a>

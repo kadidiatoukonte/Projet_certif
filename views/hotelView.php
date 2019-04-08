@@ -1,15 +1,16 @@
 <?php
-  include("template/header.php")
+  include("template/header.php");
+  include("template/navbar.php")
  ?>
 
 <body class="w3-light-grey">
 
 <!-- Navigation Bar -->
-<div class="w3-bar w3-white w3-border-bottom">
+<!-- <div class="w3-bar w3-white w3-border-bottom">
   <div class="fixed-top" style="background-color: white;">
-  <a href="index.php" class="w3-bar-item"><img src="../assets/img/logo.png" alt="logo" style="width: 60px;"></a>
+  <a href="index.php" class="w3-bar-item"><img src="../assets/img/logo.png" alt="logo" style="width: 60px;"></a> -->
 <!-- </div> -->
-  <nav class="navbar navbar-expand-lg">
+  <!-- <nav class="navbar navbar-expand-lg">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -134,22 +135,56 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
     </div>
-</div>
+</div> -->
 
 <div class="mt-5"></div>
+<div class="mx-auto row col-10 mt-5">
+  <h1 class="mt-5 text-center"><strong>LES MEILLEURS ET GRANDS HOTELS AFRICAINS</strong></h1>
+</div>
+<hr class="col-10 mx-auto">
+<div class="mt-5"></div>
+<div class="col-10 row mx-auto">
+  <div class="col mt-2 col-sm-12 col-md-6 col-lg-3 col-xl-3 -webkit-inline-box">
+           <img src="../assets/img/radisson.jpg" class="img-fluid card-img-top zoom" alt="Responsive image">
+      </div>
+      <div class="col">
+        <p class="brown sous_titre" style="text-align: center;"><strong>Radisson Blu</strong><br></p>
+        <p class="para"><strong> Radisson Blu hôtels </strong> uniques dans les destinations les plus recherchées au monde!
+          Hôtels Radisson plus de 1.400 hôtels dans le monde entier. Super petit-déjeuner. Service en chambre 24/7.
+          Restauration dans l'Hôtel. Internet rapide & gratuit. Clients 100% satisfaits. Wifi gratuit.</p><br>
+      </div>
+</div>
+<hr class="mx-auto col-10">
+<div class="col-10 row mx-auto">
+  <div class="col mt-2 col-sm-12 col-md-6 col-lg-3 col-xl-3 -webkit-inline-box">
+           <img src="../assets/img/radisson.jpg" class="img-fluid card-img-top zoom" alt="Responsive image">
+      </div>
+      <div class="col">
+        <p class="brown sous_titre" style="text-align: center;"><strong>Radisson Blu</strong><br></p>
+        <p class="para"><strong> Radisson Blu hôtels </strong> uniques dans les destinations les plus recherchées au monde!
+          Hôtels Radisson plus de 1.400 hôtels dans le monde entier. Super petit-déjeuner. Service en chambre 24/7.
+          Restauration dans l'Hôtel. Internet rapide & gratuit. Clients 100% satisfaits. Wifi gratuit.</p><br>
+      </div>
+</div>
+<hr class="mx-auto col-10">
+<div class="col-10 row mx-auto">
+  <div class="col mt-2 col-sm-12 col-md-6 col-lg-3 col-xl-3 -webkit-inline-box">
+           <img src="../assets/img/radisson.jpg" class="img-fluid card-img-top zoom" alt="Responsive image">
+      </div>
+      <div class="col">
+        <p class="brown sous_titre" style="text-align: center;"><strong>Radisson Blu</strong><br></p>
+        <p class="para"><strong> Radisson Blu hôtels </strong> uniques dans les destinations les plus recherchées au monde!
+          Hôtels Radisson plus de 1.400 hôtels dans le monde entier. Super petit-déjeuner. Service en chambre 24/7.
+          Restauration dans l'Hôtel. Internet rapide & gratuit. Clients 100% satisfaits. Wifi gratuit.</p><br>
+      </div>
+</div>
 
 
 
 
-
-
-
-
-
-
+<div class="mt-5"></div>
 </body>
 
-
- <?php
-   include("template/footer.php")
-  ?>
+<?php
+  include("template/footer.php")
+?>
